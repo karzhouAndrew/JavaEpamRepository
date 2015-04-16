@@ -1,5 +1,5 @@
 /**
- * 1)	Определить число, полученное выписыванием в обратном порядке цифр четырехзначного целого числа n.
+ * 1)	Determine the number, obtained by writing out in the reverse order numbers of a three-digit number n..
  */
 public class hw1 {
     public static void main(String[] args) {
