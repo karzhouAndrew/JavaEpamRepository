@@ -6,9 +6,11 @@ import java.util.regex.Pattern;
 
 public class Exercise1 {
     public static void main(String[] args) {
-        String sourceString = "da, !da, da)d, ad-a! dada{dad?";
-        Pattern pattern = Pattern.compile("([,]|[?]|[-]|[!]|[:]|[;]|[.][(]|[)]|[�]|[{]|[}])");
+        String sourceString = "some , !text, about)nothing, and ! another{one?!";
+
+        Pattern pattern = Pattern.compile("\\p{Punct}");
         Matcher matcher = pattern.matcher(sourceString);
+
         Integer n = 0;
         while (matcher.find()) {
             n++;
