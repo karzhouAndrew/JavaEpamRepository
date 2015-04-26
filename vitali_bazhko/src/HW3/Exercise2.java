@@ -5,11 +5,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Exercise2 {
+    final static String WORDS = "[a-zA-Z?-??-?]+";
+
     public static void main(String[] args) {
-        final String WORD = "[a-zA-Z?-??-?]+";
 
         int i = 0;
-        Pattern pattern = Pattern.compile(WORD);
+        Pattern pattern = Pattern.compile(WORDS);
         Matcher matcher = pattern.matcher("  hello world i'm    here again");
         while (matcher.find()) {
             i++;
