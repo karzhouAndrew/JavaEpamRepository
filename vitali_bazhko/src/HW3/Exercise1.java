@@ -6,9 +6,9 @@ import java.util.regex.Pattern;
 
 public class Exercise1 {
     public static void main(String[] args) {
-        String stroka = "da, !da, da)d, ad-a! dada{dad?";
+        String sourceString = "da, !da, da)d, ad-a! dada{dad?";
         Pattern pattern = Pattern.compile("([,]|[?]|[-]|[!]|[:]|[;]|[.][(]|[)]|[�]|[{]|[}])");
-        Matcher matcher = pattern.matcher(stroka);
+        Matcher matcher = pattern.matcher(sourceString);
         Integer n = 0;
         while (matcher.find()) {
             n++;
