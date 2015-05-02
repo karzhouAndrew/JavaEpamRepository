@@ -2,6 +2,8 @@
 Дано  четырехзначное натуральное  n. Верно ли, что все  цифры числа различны?
  */
 
+package lab2;
+
 import java.util.Scanner;
 
 public class Home2 {
